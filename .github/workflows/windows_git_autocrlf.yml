@@ -5,12 +5,9 @@ jobs:
     runs-on: "windows-latest"
     name: Get Windows Config
     steps:
-      - name: Local
-        run: git config -l --local
-        shell: cmd
-      - name: Local
+      - name: Global
         run: git config -l --global
         shell: cmd
-      - name: Local
+      - name: System
         run: git config -l --system
         shell: cmd
