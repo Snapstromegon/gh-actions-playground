@@ -6,8 +6,5 @@ jobs:
     name: Get Windows Config
     steps:
       - name: Global
-        run: git config -l --global
-        shell: cmd
-      - name: System
-        run: git config -l --system
+        run: git config -l
         shell: cmd
